@@ -19,7 +19,7 @@ After that, a cylinder wrapped the 3D box from outside. That way all points get 
 
 ```
 1. Find a face of the 3D box to wrap inside a circle (i.e. circle will be the cylinder face)
-2. Take the largest diagonal as diameter and diagonals' intersection point as center.
+2. Take the largest diagonal as diameter.
 3. Find center of the cylinder.
 ```
 	

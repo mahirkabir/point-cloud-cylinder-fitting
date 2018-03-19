@@ -50,15 +50,13 @@ struct cylinder {
     node center;
     double height;
     double diameter;
-    double perimeter;
-    node pointOnCenterCircleSurface;
+    node surfaceCenter;
 
     cylinder(node _center, double _height, double _diameter, node _anotherPointOnCenterSurface) {
         center = _center;
         height = _height;
         diameter  = _diameter;
-        pointOnCenterCircleSurface = _anotherPointOnCenterSurface;
-        perimeter = 2 * (height + diameter);
+        surfaceCenter = _anotherPointOnCenterSurface;
     }
 };
 
@@ -153,5 +151,5 @@ int main() {
 
     fout << "Cylinder center: " << ans.center.print() << endl;
     fout << "Cylinder height: " << ans.height << endl;
-    fout << "Another point on surface of center circle: " << ans.pointOnCenterCircleSurface.print() << endl;
+    fout << "Center of a surface: " << ans.surfaceCenter.print() << endl;
 }
