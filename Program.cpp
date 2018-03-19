@@ -119,8 +119,9 @@ Cylinder GetBoundingCylinder(vector<Node> nodes) {
     Node centerPointOfAPlane((e.x + g.x) / 2, (e.y + g.y) / 2, (e.z + g.z) / 2);
     Node centerPointOfOppPlane((a.x + c.x) / 2, (a.y + c.y) / 2, (a.z + c.z) / 2);
 
+    //Take max diagonal from plane
     double diameter = max(sqrt((a.x - c.x)*(a.x - c.x) + (a.y - c.y)*(a.y - c.y) + (a.z - c.z)*(a.z - c.z)),
-                          sqrt((b.x - d.x)*(b.x - d.x) + (b.y - d.y)*(b.y - d.y) + (b.z - d.z)*(b.z - d.z))); // take max diagonals form plane
+                          sqrt((b.x - d.x)*(b.x - d.x) + (b.y - d.y)*(b.y - d.y) + (b.z - d.z)*(b.z - d.z)));
 
     double height = fabs(cornerMax.y - cornerMin.y);
 

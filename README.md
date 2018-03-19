@@ -24,7 +24,7 @@ After that, a cylinder wrapped the 3D box from outside. That way all points get 
 ```
 	
 ## Steps to run
-The repository contains a **cmesh0.ply** file which is the input. The **Program.cpp** is the code file. Run the .cpp file to get the wrapping cylinder information.
+The repository contains a **cmesh0.ply** file which is the input. The **Program.cpp** is the code file. Run the .cpp file to get the wrapping cylinder information in **Output.txt** file.
 
 ## Language used
 C++
