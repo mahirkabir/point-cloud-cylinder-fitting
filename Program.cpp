@@ -1,7 +1,15 @@
-#include<bits/stdc++.h>
+#include<stdio.h>
+#include<limits.h>
+#include<math.h>
+#include<iostream>
+#include<vector>
+#include<sstream>
+#include<fstream>
 
 using namespace std;
-#define PI 2 * acos (0.0)
+
+#define PI 2 * acos(0.0)
+
 struct node {
     double x;
     double y;
@@ -97,9 +105,6 @@ cylinder GetBoundingCylinder(vector<node> nodes) {
         cornerMin = node(min(cornerMin.x, nodes[i].x), min(cornerMin.y, nodes[i].y), min(cornerMin.z, nodes[i].z));
     }
 
-    //cout << cornerMax.print() << endl;
-    //cout << cornerMin.print() << endl;
-
     //Corner points of bounding box
     node a (cornerMin.x, cornerMin.y, cornerMin.z);
     node b (cornerMin.x, cornerMin.y, cornerMax.z);
@@ -143,12 +148,6 @@ int main() {
     }
 
     int n = nodes.size();
-
-//    for(int i = 0; i < n; ++i) {
-//        node a = nodes[i];
-//        fout.precision(15);
-//        fout << a.x << " " << a.y << " " << a.z << " " << a.red << " " << a.green << " " << a.blue << endl;
-//    }
 
     cylinder ans = GetBoundingCylinder(nodes);
 
